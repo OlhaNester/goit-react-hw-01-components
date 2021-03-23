@@ -1,4 +1,4 @@
-const MyFirstComp = () => {
+const MyFirstComp = (props) => {
   return (
     <div className="test-comp">
       <h2> Test-Component</h2>
@@ -8,6 +8,7 @@ const MyFirstComp = () => {
         dolore labore esse quam recusandae! Nihil, autem quia earum magni
         maiores facere!
       </p>
+      <p>{props.user.name}</p>
     </div>
   );
 };
