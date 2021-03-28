@@ -1,0 +1,25 @@
+.transactions {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgb(184, 179, 179);
+}
+
+.title {
+  width: 33.3%;
+  padding: 15px 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.titlerow {
+  background-color: rgb(125, 129, 129);
+}
+
+.row:nth-child(2n) {
+  background-color: rgb(178, 182, 182);
+}
+.value {
+  text-transform: capitalize;
+}
