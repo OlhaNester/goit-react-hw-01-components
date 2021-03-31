@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from './components/Container/Container';
-import Profile from './components/Profile/Profile';
-import Statistics from './components/Statistics/Statistics';
-import FriendList from './components/FriendList/FriendList';
-import TransHistory from './components/TransHistory/TransHistory';
+import Container from './components/Container';
+import Profile from './components/Profile';
+import Statistics from './components/Statistics';
+import FriendList from './components/FriendList';
+import TransHistory from './components/TransHistory';
 
 import user from './data/user.json';
 import stats from './data/stats.json';
