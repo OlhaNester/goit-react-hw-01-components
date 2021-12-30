@@ -2,32 +2,33 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StatsItem from './StatsItem';
 
+import { ProfileContainer, Avatar, Name, Tag, Location, Stats } from './Profile.styled';
+
 const Profile = ({ avatar, name, tag, location, stats }) => {
   // const keys = Object.keys(stats);
   //       for (const key of keys){
   //         console.log(key, stats[key])
   //       };
   return (
-    <div >
+    <ProfileContainer >
       <div >
-        <img
+        <Avatar
           src={avatar}
           alt="Аватар пользователя"
           width="200"
         />
-        <p >{name}</p>
-        <p >@{tag}</p>
+        <Name >{name}</Name>
+        <Tag >@{tag}</Tag>
 
-        <p >{location}</p>
+        <Location >{location}</Location>
       </div>
 
-      <ul>
-        
+      <Stats>
         <StatsItem label="Followers" quantity={stats.followers} />
         <StatsItem label="Views" quantity={stats.views} />
         <StatsItem label="Likes" quantity={stats.likes} />
-      </ul>
-    </div>
+      </Stats>
+    </ProfileContainer>
   );
 };
 
