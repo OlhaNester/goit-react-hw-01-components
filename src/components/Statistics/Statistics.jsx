@@ -1,14 +1,17 @@
 import PropTypes from 'prop-types';
 import StatisticList from './StatisticList';
+import { SectionStatistics, Title } from './Statisctic.styled';
 
-const Statistics = ({title, stats}) => {
-    return ( <section >
-      {title && <h2 >Upload stats</h2>}
+const Statistics = ({ title, stats }) => {
+  return (
+    <SectionStatistics>
+      {title && <Title>Upload stats</Title>}
 
       <StatisticList stats={stats} />
-    </section> );
-}
- Statistics.propTypes = {
+    </SectionStatistics>
+  );
+};
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
