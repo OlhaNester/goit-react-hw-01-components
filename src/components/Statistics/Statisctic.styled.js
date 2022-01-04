@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const SectionStatistics = styled.section`
   max-width: 320px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;

@@ -5,5 +5,9 @@ max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
-  background-color: #7093e630;`
+  background-color: #7093e630;
+  li {
+    list-style: none;
+
+  }`
 
