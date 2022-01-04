@@ -12,7 +12,7 @@ import transactions from './components/TransactionHstory/transactions.json';
 const App = () => {
   return (
     <ContainerApp>
-      <Profile
+      <Profile 
         avatar={user.avatar}
         name={user.username}
         tag={user.tag}

@@ -1,10 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import StatsItem from './StatsItem';
 
 import { ProfileContainer, Avatar, Name, Tag, Location, Stats } from './Profile.styled';
 
-const Profile = ({ avatar, name, tag, location, stats }) => {
+  const Profile = ({ avatar, name, tag, location, stats }) => {
   // const keys = Object.keys(stats);
   //       for (const key of keys){
   //         console.log(key, stats[key])

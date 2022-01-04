@@ -22,9 +22,7 @@ position: relative;
     &:hover, &:focus {
       transform: scale(1.1);
     }
-  
-      
-`;
+  `;
 
 export const Name = styled.p`
   margin-left: 20px;
