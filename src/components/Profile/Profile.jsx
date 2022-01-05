@@ -36,8 +36,7 @@ const Profile = ({ user }) => {
 };
 
 Profile.propTypes = {
-  // user: PropTypes.object.isRequired,
-  user: PropTypes.shape({
+   user: PropTypes.shape({
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,

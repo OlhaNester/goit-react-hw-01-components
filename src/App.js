@@ -14,12 +14,7 @@ const App = () => {
     <ContainerApp>
       <Profile
         user={user}
-        // avatar={user.avatar}
-        // name={user.username}
-        // tag={user.tag}
-        // location={user.location}
-        // stats={user.stats}
-      />
+              />
       <Statistics title="Upload stats" stats={data} />;
       <Statistics stats={data} />;
       <FriendList friends={friends} />
