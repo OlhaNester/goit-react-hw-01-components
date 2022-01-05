@@ -10,8 +10,7 @@ import {
   Stats,
 } from './Profile.styled';
 
-const Profile = ({ user }) => {
-  const { avatar, username: name, tag, location, stats } = user;
+const Profile = ({ avatar, name, tag, location, stats }) => {
   // const keys = Object.keys(stats);
   //       for (const key of keys){
   //         console.log(key, stats[key])
@@ -36,8 +35,8 @@ const Profile = ({ user }) => {
 };
 
 Profile.propTypes = {
-   user: PropTypes.shape({
-    username: PropTypes.string.isRequired,
+  user: PropTypes.shape({
+    name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     stats: PropTypes.objectOf(PropTypes.number).isRequired,

@@ -4,17 +4,21 @@ import Statistics from './components/Statistics';
 import FriendList from './components/FriendList';
 import TransactionHistory from './components/TransactionHstory';
 
-import user from './components/Profile/user.json';
-import data from './components/Statistics/data.json';
-import friends from './components/FriendList/friends.json';
-import transactions from './components/TransactionHstory/transactions.json';
+import user from './data/user.json';
+import data from './data/data.json';
+import friends from './data/friends.json';
+import transactions from './data/transactions.json';
 
 const App = () => {
   return (
     <ContainerApp>
       <Profile
-        user={user}
-              />
+        avatar={user.avatar}
+        name={user.username}
+        tag={user.tag}
+        location={user.location}
+        stats={user.stats}
+      />
       <Statistics title="Upload stats" stats={data} />;
       <Statistics stats={data} />;
       <FriendList friends={friends} />
